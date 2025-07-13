@@ -1,0 +1,11 @@
+uvicorn
+fastapi
+python-multipart
+google-generativeai
+python-dotenv
+beautifulsoup4
+requests
+Flask
+Flask-Cors
+paramiko
+Werkzeug
