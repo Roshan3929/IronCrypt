@@ -1,6 +1,6 @@
-##IronCrypt Vulnerability Patch Management Using LLM
 
-# Cyber Risk Visualizer
+
+# IronCrypt: Vulnerability Patch Management Using LLM
 
 
 The Cyber Risk Visualizer is a comprehensive dashboard designed to provide a real-time, interactive view of your organization's cybersecurity posture. It aggregates vulnerability data, visualizes asset locations, manages patching, and offers intelligent assistance to help security teams identify, prioritize, and remediate threats effectively.
