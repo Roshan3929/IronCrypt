@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
+##IronCrypt Vulnerability Patch Management Using LLM
 
-## Project info
+# Cyber Risk Visualizer
 
-**URL**: https://lovable.dev/projects/bd8b3eff-97a6-4d50-940c-0e2ec35e3d69
+![Project Banner](cyber-risk-visualizer-main/public/placeholder.svg)
 
-## How can I edit this code?
+The Cyber Risk Visualizer is a comprehensive dashboard designed to provide a real-time, interactive view of your organization's cybersecurity posture. It aggregates vulnerability data, visualizes asset locations, manages patching, and offers intelligent assistance to help security teams identify, prioritize, and remediate threats effectively.
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+*   **Vulnerability Dashboard**: An overview of all identified vulnerabilities, sortable and filterable by severity, asset, and status.
+*   **Office Floorplan Visualizer**: An interactive map of your office, showing the physical location of assets and their current risk status.
+*   **Patch Management**: A centralized view for tracking and deploying patches to vulnerable systems.
+*   **AI Assistant**: An integrated chatbot to help with queries and guide you through remediation steps.
+*   **Data Import/Export**: Easily import asset data and export visualizations and reports.
+*   **Responsive Design**: A modern, responsive UI that works on all devices.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bd8b3eff-97a6-4d50-940c-0e2ec35e3d69) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+*   **Frontend**:
+    *   React
+    *   TypeScript
+    *   Vite
+    *   Tailwind CSS
+    *   shadcn/ui
+    *   Recharts
+*   **Backend**:
+    *   Python
+    *   Flask
+    *   Pandas
+*   **Deployment & Orchestration**:
+    *   Docker
+    *   Ansible
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Follow these instructions to get the project up and running on your local machine.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+Make sure you have the following installed:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+*   [Node.js](https://nodejs.org/) (v18 or later)
+*   [Python](https://www.python.org/) (v3.9 or later) & `pip`
+*   [Docker](https://www.docker.com/get-started)
+*   [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+*   [Bun](https://bun.sh/) (Optional, for frontend package management)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation & Setup
 
-# Step 3: Install the necessary dependencies.
-npm i
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repository-url>
+    cd <repository-directory>
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+2.  **Set up the Backend:**
 
-**Edit a file directly in GitHub**
+    *   Create a virtual environment:
+        ```bash
+        python3 -m venv venv
+        source venv/bin/activate
+        ```
+    *   Install Python dependencies:
+        ```bash
+        pip install -r requirements.txt
+        ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3.  **Set up the Frontend:**
 
-**Use GitHub Codespaces**
+    *   Navigate to the frontend directory:
+        ```bash
+        cd cyber-risk-visualizer-main
+        ```
+    *   Install Node.js dependencies:
+        ```bash
+        npm install
+        ```
+        or if using Bun:
+        ```bash
+        bun install
+        ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Running the Application
 
-## What technologies are used for this project?
+1.  **Start the Backend Server:**
+    Open a terminal, navigate to the project root, activate the virtual environment, and run:
+    ```bash
+    source venv/bin/activate
+    flask run
+    ```
+    The backend API will be running on `http://127.0.0.1:5000`.
 
-This project is built with:
+2.  **Start the Frontend Development Server:**
+    In a separate terminal, navigate to the `cyber-risk-visualizer-main` directory and run:
+    ```bash
+    npm run dev
+    ```
+    The application will be accessible at `http://localhost:5173`.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Docker Setup (Alternative)
 
-## How can I deploy this project?
+You can also run the entire application using Docker.
 
-Simply open [Lovable](https://lovable.dev/projects/bd8b3eff-97a6-4d50-940c-0e2ec35e3d69) and click on Share -> Publish.
+1.  **Build the Docker image:**
+    ```bash
+    docker build -t cyber-risk-visualizer .
+    ```
 
-## Can I connect a custom domain to my Lovable project?
+2.  **Run the Docker container:**
+    ```bash
+    docker run -p 5173:80 cyber-risk-visualizer
+    ```
+    The application will be available at `http://localhost:5173`.
 
-Yes, you can!
+## 🤝 Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
