@@ -1,0 +1,43 @@
+- become: true
+  hosts: servers
+  tasks:
+  - name: Update bind on 192.168.1.1
+    shell: apt-get install -y --only-upgrade bind
+    tags:
+    - patch_bind_192_168_1_1
+  - name: Update bind on 192.168.1.1
+    shell: apt-get install -y --only-upgrade bind
+    tags:
+    - patch_bind_192_168_1_1
+  - name: Update bind on 192.168.1.1
+    shell: apt-get install -y --only-upgrade bind
+    tags:
+    - patch_bind_192_168_1_1
+  - name: Update openssh on 192.168.1.10
+    shell: apt-get install -y --only-upgrade openssh
+    tags:
+    - patch_openssh_192_168_1_10
+  - name: Update apache2 on 192.168.1.10
+    shell: apt-get install -y --only-upgrade apache2
+    tags:
+    - patch_apache2_192_168_1_10
+  - name: Update apache2 on 192.168.1.10
+    shell: apt-get install -y --only-upgrade apache2
+    tags:
+    - patch_apache2_192_168_1_10
+  - name: Update apache2 on 192.168.1.10
+    shell: apt-get install -y --only-upgrade apache2
+    tags:
+    - patch_apache2_192_168_1_10
+  - name: Update proftpd-dfsg on 192.168.1.25
+    shell: apt-get install -y --only-upgrade proftpd-dfsg
+    tags:
+    - patch_proftpd-dfsg_192_168_1_25
+  - name: Update samba on 192.168.1.25
+    shell: apt-get install -y --only-upgrade samba
+    tags:
+    - patch_samba_192_168_1_25
+  - name: Update samba on 192.168.1.25
+    shell: apt-get install -y --only-upgrade samba
+    tags:
+    - patch_samba_192_168_1_25

@@ -1,0 +1,55 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build and distribution
+/build/
+/dist/
+*.egg-info/
+
+# IDE and Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Sensitive credentials
+# This is critical to prevent your private SSH keys from being uploaded.
+docker_ssh/id_rsa
+
+# Reports and local data
+/reports/
+/patch_logs/
+/data/
+
+# Frontend build output
+cyber-risk-visualizer-main/dist/
+cyber-risk-visualizer-main/.vite/ 

@@ -1,0 +1,30 @@
+[webservers]
+web1 ansible_host=192.168.1.1 ansible_connection=ssh
+web2 ansible_host=192.168.1.10 ansible_connection=ssh
+dbserver ansible_host=192.168.1.12 ansible_connection=ssh
+ftp_server ansible_host=192.168.1.25 ansible_connection=ssh
+
+[all:vars]
+patch_data:
+  web1:
+    bind:
+      - CVE-2021-25216
+      - CVE-2021-25215
+      - CVE-2021-25214
+  web2:
+    openssh:
+      - CVE-2018-15473
+    apache2:
+      - CVE-2020-13950
+      - CVE-2019-10098
+      - CVE-2021-26691
+  dbserver:
+    # No specific packages to patch, system updates will be used.
+    # Consider adding specific packages for better control in a real-world scenario.
+    pass: null # Placeholder to avoid errors when no packages are defined.
+  ftp_server:
+    proftpd_dfsg:
+      - CVE-2019-12815
+    samba:
+      - CVE-2017-7494
+      - CVE-2016-2118
