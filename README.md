@@ -13,7 +13,7 @@ The core objective is to provide security teams with a holistic view of their cy
 *   **Provide Intelligent Assistance**: Offer an AI-powered assistant to help interpret complex security data, answer queries, and guide users through remediation processes, effectively augmenting human expertise.
 *   **Improve Situational Awareness**: By combining vulnerability data with asset location and real-time patching status, the system provides an unparalleled level of situational awareness, critical for rapid incident response and proactive risk mitigation.
 
-Ultimately, the Cyber Risk Visualizer transforms raw security data into actionable intelligence, allowing organizations to maintain a strong security posture, minimize their attack surface, and protect critical assets from evolving cyber threats.
+Ultimately, the system transforms raw security data into actionable intelligence, allowing organizations to maintain a strong security posture, minimize their attack surface, and protect critical assets from evolving cyber threats.
 
 ## Architecture and Components
 
