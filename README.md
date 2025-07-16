@@ -4,7 +4,7 @@ This project is specifically designed to automate and streamline the entire work
 
 ## Project Overview
 
-The Cyber Risk Visualizer is a robust and comprehensive platform designed to empower organizations in proactively managing their cybersecurity posture. In today's complex threat landscape, simply identifying vulnerabilities is not enough; effective risk management requires a real-time understanding of assets, their associated vulnerabilities, and the ability to rapidly deploy remediation actions. This project aims to bridge that gap by integrating several key functionalities into a unified, interactive dashboard.
+The IronCrypt patch manager is a robust and comprehensive platform designed to empower organizations in proactively managing their cybersecurity posture. In today's complex threat landscape, simply identifying vulnerabilities is not enough; effective risk management requires a real-time understanding of assets, their associated vulnerabilities, and the ability to rapidly deploy remediation actions. This project aims to bridge that gap by integrating several key functionalities into a unified, interactive dashboard.
 
 The core objective is to provide security teams with a holistic view of their cyber risks, enabling them to:
 *   **Identify and Prioritize Vulnerabilities**: Aggregate vulnerability data from various sources and present it in a clear, actionable format, allowing teams to prioritize based on severity and impact.
