@@ -189,6 +189,3 @@ We welcome contributions to enhance the Cyber Risk Visualizer. If you'd like to 
 5.  Push your branch to your forked repository.
 6.  Open a pull request to the main repository, detailing your changes.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file in the root of the repository for full details.
